@@ -7,40 +7,52 @@
 li{
     list-style: none;
 }
-.cards{
-    display: flex;
+
+.articles {
+    width: 100%;
+    height: auto;
+
+
+}
+.articles__list {
+// display: flex;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+grid-column-gap: 2rem;
+grid-row-gap: 2rem;
+padding: .3em;
+// justify-content: space-between;
+}
+.articles__items {
+}
+.card {
+    background: #000;
+    border: 1px solid #eee;
+    padding-top: 50%;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+
+}
+.card__image {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    object-fit: cover;
+}
+.card__article {
+    text-align: left;
+    padding: 0.5em;
+}
+.card__title {
+    text-align: center;
     
-    .cards__list{
- 
-        display: flex;
-        background: #eee;
-        width: 100vw;
-        justify-content: space-evenly;
-
-        .cards__item{
-        
-        }
-        .card__wrapper{ 
-            border: .1px solid #000;
-            background: inherit;
-            width: 20vw;
-            height: auto;
-            display: flex;
-            position: relative;
-            justify-content: space-between;
-            padding-top: 60%;
-            position: relative;
-            .card__image{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: none;
-                object-position: center;
-            }
-
-        }
-
-    }
+}
+.card__text {
+    text-indent: 20px;
+    text-align: justify;
+}
+.card__button {
+    width: 100%;
+    padding : 0.2em;
 }
