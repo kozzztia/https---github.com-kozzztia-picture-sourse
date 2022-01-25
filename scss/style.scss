@@ -1,0 +1,38 @@
+body{
+    color: white;
+    font-size: 1.7vw;
+   
+}
+.cards{
+    border: 1px solid #000;
+    width: 100%;
+    height: auto;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    &__wrapper{
+        background: #000;
+        display: flex;
+        justify-content: space-between;
+        width:70%;
+        height: auto;
+        padding: inherit;
+        height:auto;   
+    }
+    &__link{
+        padding: inherit;
+        border: 1px solid #fff;
+        position: relative;
+        height: auto;
+        display: flex;
+        flex: 0 0 20%;
+        justify-content: center;
+        .cards__element {
+            top: 0;
+        }
+    }
+
+}
